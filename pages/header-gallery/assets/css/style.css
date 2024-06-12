@@ -28,6 +28,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding: .5rem 0 .5rem 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -129,6 +130,7 @@ section {
         padding: 7px;
         font-size: 19px;
         cursor: pointer;
+        transition: 0.3s ease;
     }
 }
 
@@ -161,6 +163,7 @@ section {
         color: #fff;
         text-decoration: none;
         font: 1em 'Rushk', sans-serif;
+        transition: all 0.4s ease;
     }
 }
 
@@ -177,8 +180,9 @@ section {
     align-self: flex-start;
 
     & .helmet-logo {
-        transform: scale(.9);
-        filter: drop-shadow(0 0 30px #b556ff) saturate(2) brightness(2) hue-rotate(345deg);
+        transform: scale(1);
+        filter: drop-shadow(0 0 20px #b556ff);
+        transition: all 0.3s ease;
     }
 
     & nav {
@@ -204,6 +208,7 @@ section {
         color: #b557ff;
         font-size: 35px;
         cursor: pointer;
+        transition: all 0.5s ease;
     }
 }
 
@@ -227,43 +232,88 @@ section {
 
 .animated-two {
 
-    & a:hover {
-        transform: scale(1.2);
+    &:hover {
+        & .house:not(:hover) {
+            transform: scale(0.8);
+        }
     }
 
     & .gryffindor:hover{
         filter: drop-shadow(0 0 20px #740001);
         color: #740001;
+        transform: scale(1.2);
+
+        &:active {
+            transform: scale(0.8);
+        }
     }
 
     & .slytherin:hover{
         filter: drop-shadow(0 0 20px #2a623d);
         color: #2a623d;
+        transform: scale(1.2);
+
+        &:active {
+            transform: scale(0.8);
+        }
     }
 
     & .ravenclaw:hover{
         filter: drop-shadow(0 0 20px #223164);
         color: #223164;
+        transform: scale(1.2);
+
+        &:active {
+            transform: scale(0.8);
+        }
     }
 
     & .hufflepuff:hover{
         filter: drop-shadow(0 0 20px #ffd25f);
         color: #ffd25f;
-    }
+        transform: scale(1.2);
 
-    & a:active {
-        transform: scale(0.8);
+        &:active {
+            transform: scale(0.8);
+        }
     }
 
 }
 
 .animated-three {
 
+    .logo {
+        display: flex;
+        align-items: center;
+
+        & .ezio-logo {
+            display: flex;
+            position: absolute;
+            height: 99px;
+            left: 3.8rem;
+            opacity: 0;
+            transition: opacity .4s ease-in-out;
+        }
+
+        &:hover {
+            & > .ezio-logo {
+                opacity: 1;
+                filter: drop-shadow(0 0 50px gray) blur(0.6px);
+            }
+        }
+    }
+
     .container {
         align-self: center;
+        display: flex;
         padding: 9px 12px;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         
+        &::before {
+            width: 10px;
+            background: #566d6b;
+        }
+
         &:hover {
             box-shadow: inset 120px 0 0 0 aliceblue;
         }
@@ -274,7 +324,14 @@ section {
     }
 
     & a:hover {
-        
+        font-size: 1rem;
+    }
+
+    & .fa-user:hover {
+        transform: scale(1.2);
+        border: 2px solid #566d6b;
+        color: #566d6b;
+        background-color: aliceblue;
     }
 }
 
@@ -282,5 +339,83 @@ section {
 
     & .sharingan-logo:hover {
         transform: rotateZ(360deg);
+    }
+
+    &:hover {
+        .nav:not(:hover) {
+            transform: scale(0.8);
+        }
+    }
+
+    & a:hover {
+        color: #af1313;
+    }
+}
+
+.animated-five {
+
+    & .helmet-logo:hover {
+        transform: scale(0.9);
+        filter: drop-shadow(0 0 10px #b556ff) brightness(1);
+    }
+
+    & nav {
+        gap: 3.2rem;
+    }
+
+    & a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    & a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -10px;
+        left: 50%;
+        background-color: #b557ff;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    
+    & a:hover {
+        color: #b557ff;
+    }
+    
+    & a:hover::after {
+        width: 100%;
+    }
+    
+    & .settings {
+        padding: 0 500px;
+    }
+
+    & .fa-gear {
+        padding: 0 40px;
+    }
+
+    & .fa-gear:hover {
+        transform: translateX(-45px);
+        font-size: 25px;
+    }
+
+    & p {
+        display: inline-block;
+        position: absolute;
+        padding: 0 30px;
+        font: 1.2rem 'Quicksand', sans-serif;
+        left: 0;
+        opacity: 0;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+    }
+
+    & p:hover {
+        left: 45px;
+        opacity: 1;
     }
 }
