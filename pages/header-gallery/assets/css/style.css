@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Transcend Regular';
+    src: url('/pages/header-gallery/assets/font/TranscendRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rushk';
+    src: url('/pages/header-gallery/assets/font/Rushk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0 .5rem 0;
+}
+
+section {
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Static Headers */
+.header-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: black;
+
+    & nav {
+        display: flex;
+        gap: 50px;
+    }
+
+    & a {
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        font: 0.8rem 'Press Start 2P';
+        transition: 0.3s ease;
+    }
+
+    & button {
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 30px;
+        background-color: #e2e2e2;
+        color: black;
+        font: 0.8rem 'Press Start 2P', sans-serif;
+        cursor: pointer;
+        transition: 0.2s ease;
+        }
+}
+
+.header-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 50px;
+    background-color: #000b26;
+
+    & nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;}
+
+    & a {
+        color: #edbc2f;
+        text-decoration: none;
+        font: 0.9rem "Transcend Regular", serif;
+        font-weight: 700;
+        transition: 0.3s ease;
+    }
+}
+
+.header-three {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    box-shadow: gray 0 2px 10px 3px;
+    padding: 10px 80px;
+    background-image: linear-gradient(180deg, rgba(255,0,0,0), rgb(130, 153, 143));
+
+    & nav {
+        display: flex;
+        gap: 85px;
+    }
+
+    & .unity-logo {
+        height: 79px;
+    }
+
+    & a {
+        color: black;
+        align-self: center;
+        text-decoration: none;
+        font: 1.1rem 'Alice', sans-serif;
+        font-weight: 800;
+        transition: 0.3s ease;
+    }
+
+    & .fa-user {
+        display: flex;
+        align-self: center;
+        border: 2px solid black;
+        border-radius: 55%;
+        padding: 7px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+}
+
+.header-four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #0d0d0d;
+
+    & .sharingan-logo {
+        height: 70px;
+        transition: transform 0.5s ease;
+    }
+
+    & .eternal-logo {
+        position: absolute;
+        left: 80px;
+        opacity: 0;
+        height: 70px;
+    }
+
+    & nav {
+        display: flex;
+        padding-right: 15px;
+        gap: 80px;
+    }
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+        font: 1em 'Rushk', sans-serif;
+    }
+}
+
+.header-five {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    left: 0;
+    width: 25vh;
+    height: 100vh;
+    background: #0a0d15;
+    padding: 2.5rem 0;
+    align-items: center;
+    align-self: flex-start;
+
+    & .helmet-logo {
+        transform: scale(.9);
+        filter: drop-shadow(0 0 30px #b556ff) saturate(2) brightness(2) hue-rotate(345deg);
+    }
+
+    & nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    & a {
+        align-self: center;
+        color: #fff;
+        text-decoration: none;
+        font: 1rem 'Quicksand', sans-serif;
+    }
+
+    & hr {
+        align-self: center;
+        width: 45%;
+        border: 1px solid #b557ff;
+    }
+
+    & .fa-gear {
+        color: #b557ff;
+        font-size: 35px;
+        cursor: pointer;
+    }
+}
+
+/* Animated Headers */
+
+.animated-one {
+
+    & a:hover {
+        transform: translateY(-10px);
+    }
+
+    & button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    & button:active {
+        transform: scale(0.8);
+    }
+}
+
+.animated-two {
+
+    & a:hover {
+        transform: scale(1.2);
+    }
+
+    & .gryffindor:hover{
+        filter: drop-shadow(0 0 20px #740001);
+        color: #740001;
+    }
+
+    & .slytherin:hover{
+        filter: drop-shadow(0 0 20px #2a623d);
+        color: #2a623d;
+    }
+
+    & .ravenclaw:hover{
+        filter: drop-shadow(0 0 20px #223164);
+        color: #223164;
+    }
+
+    & .hufflepuff:hover{
+        filter: drop-shadow(0 0 20px #ffd25f);
+        color: #ffd25f;
+    }
+
+    & a:active {
+        transform: scale(0.8);
+    }
+
+}
+
+.animated-three {
+
+    .container {
+        align-self: center;
+        padding: 9px 12px;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        
+        &:hover {
+            box-shadow: inset 120px 0 0 0 aliceblue;
+        }
+
+        & a:hover{
+            color: #566d6b;
+        }
+    }
+
+    & a:hover {
+        
+    }
+}
+
+.animated-four {
+
+    & .sharingan-logo:hover {
+        transform: rotateZ(360deg);
+    }
+}
