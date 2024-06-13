@@ -11,10 +11,8 @@
 }
 
 @font-face {
-    font-family: 'Rushk';
-    src: url('/pages/header-gallery/assets/font/Rushk.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Salted Bay';
+    src: url('/pages/header-gallery/assets/font/SaltedBayRegular.woff') format('woff');
 }
 
 * {
@@ -144,7 +142,7 @@ section {
         display: flex;
         align-self: center;
         border: 2px solid black;
-        border-radius: 55%;
+        border-radius: 50%;
         padding: 7px;
         font-size: 19px;
         cursor: pointer;
@@ -180,7 +178,7 @@ section {
     & a {
         color: #fff;
         text-decoration: none;
-        font: 1em 'Rushk', sans-serif;
+        font: 1em 'Salted Bay', sans-serif;
         transition: all 0.4s ease;
     }
 }
@@ -326,11 +324,6 @@ section {
         display: flex;
         padding: 9px 12px;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-        
-        &::before {
-            width: 10px;
-            background: #566d6b;
-        }
 
         &:hover {
             box-shadow: inset 120px 0 0 0 aliceblue;
