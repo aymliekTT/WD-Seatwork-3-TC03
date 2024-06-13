@@ -11,8 +11,11 @@
 }
 
 @font-face {
-    font-family: 'Salted Bay';
-    src: url('/pages/header-gallery/assets/font/SaltedBayRegular.woff') format('woff');
+    font-family: 'salted_bayregular';
+    src: url('/pages/header-gallery/assets/font/rushk-webfont.woff2') format('woff2'),
+         url('/pages/header-gallery/assets/font/rushk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -178,7 +181,7 @@ section {
     & a {
         color: #fff;
         text-decoration: none;
-        font: 1em 'Salted Bay', sans-serif;
+        font: 1em 'salted_bayregular', sans-serif;
         transition: all 0.4s ease;
     }
 }
