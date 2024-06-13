@@ -11,8 +11,9 @@
 }
 
 @font-face {
-    font-family: 'Salted Bay';
-    src: url('/pages/header-gallery/assets/font/Rushk.ttf') format('truetype');
+    font-family: 'RODAMAS1';
+    src: url('/pages/header-gallery/assets/font/RODAMAS1.ttf.eot') format('embedded-opentype'),
+         url('/pages/header-gallery/assets/font/RODAMAS1.ttf.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -180,8 +181,8 @@ section {
     & a {
         color: #fff;
         text-decoration: none;
-        font: 1rem 'Salted Bay', sans-serif;
-        letter-spacing: 0.5px;
+        font: 2.2rem 'RODAMAS1', sans-serif;
+        letter-spacing: 1px;
         transition: all 0.4s ease;
     }
 }
