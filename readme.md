@@ -5,15 +5,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/aymliekTT">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
+  <!-- TODO: If you want to add a logo or banner you can add it here -->
     <img src="./assets/img/logo.png" alt="spidey" width="130" height="130">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Header and Footer Designs</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  This project showcases various designs and animations for headers and footers using HTML and CSS.
 </div>
 
 <br />
@@ -57,20 +57,24 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Description of the project in detail.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project?
+  - The project is to make five static and animated headers and footers.
+- What is the purpose?
+  - The goal is to showcase different layout styles, colors, typography, and responsive design techniques to create visually appealing and functional headers and footers for web pages.
+- What are the key components?
+  - It is a multipage website with a landing page, header gallery page, and footer gallery page. The galleries showcase animations of the headers and footers.
+- What technology is used and how is it used?
+  - The technologies used on this website are HTML and CSS. The HTML is used to lay out the headers and footers, while the CSS makes it more visually pleasing and interactive.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Animations
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -81,11 +85,11 @@ Guiding Question:
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
 2. Do not rename any .html files; always use `index.html` as the filename.
 3. Place Files in their respective folders.
-4. All file naming are in camel case.
-   - Camel case is naming format where there is no white space in separation of each words, the first word is in all lower case while the succeding words first letter are in upper followed by lower cased letters.
+4. All file naming is in camel case.
+   - Camel case is a naming format where there is no white space in the separation of each word, the first word is in all lower case while the succeding word's first letter is in upper followed by lower case letters.
    - ex.: buttonAnimatedStyle.css
 5. Use only `External CSS`.
-6. Renaming of Pages folder names are a must, and relates to what it is doing or data it holding.
+6. Renaming of Pages folder names are a must and relates to what it is doing or data it holding.
 7. File Structure to follow below.
 
 ```
@@ -116,4 +120,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Font Awesome Link | It puts icons on the website. | https://cdnjs.com/libraries/font-awesome |
+| Google Fonts | It changes the fonts of the text inside the website. | https://fonts.google.com/ |
