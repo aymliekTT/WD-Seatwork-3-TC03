@@ -404,6 +404,10 @@ section {
         top: 2278px;
     }
 
+    & a {
+        font: 1rem "Transcend Regular", serif;
+    }
+
     & .policy-container a {
         display: flex;
         padding: 0 25px;
