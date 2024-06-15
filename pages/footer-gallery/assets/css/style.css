@@ -126,7 +126,7 @@ section {
             margin: 0;
             color: #edbc2f;
             text-decoration: none;
-            font: 1rem 'Transcend Regular', sans-serif;
+            font: 1rem 'Transcend Regular', serif;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -145,7 +145,7 @@ section {
 
         & p {
             padding: 0 25px 0 0;
-            font: 1rem 'Transcend Regular', sans-serif;
+            font: 1rem 'Transcend Regular', serif;
             color: #edbc2f;
             text-align: center;
         }
