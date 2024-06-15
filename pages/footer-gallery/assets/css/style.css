@@ -145,7 +145,7 @@ section {
 
         & p {
             padding: 0 25px 0 0;
-            font: 1rem 'Transcend Regular', serif;
+            font: 1rem "Transcend Regular", serif;
             color: #edbc2f;
             text-align: center;
         }
